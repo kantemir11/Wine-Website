@@ -1,0 +1,66 @@
+@include for-size(small-phone) {
+  .header {
+    &__top {
+      padding-top: 25px 0;
+    }
+    &__logo {
+      margin: 0;
+      max-width: 25%;
+    }
+    &__list {
+      .list__item {
+        margin-left: 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    &__bottom,
+    &__slogan {
+      display: none;
+    }
+    .overlay {
+      opacity: .9;
+      backdrop-filter: 5px;
+    }
+    .burger,
+    .search,
+    .login,
+    .register {
+      &__overlay {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*======================================*/
+@include for-size(iphone-x){
+  .header{
+    &__list{
+      display: none;
+    }
+    .overlay{
+      opacity: .9;
+    }
+    .search{
+      &__input{
+        padding: 10px;
+        &::placeholder{
+          font-size: 12px;
+        }
+      }
+      &__button{
+        padding: 12px;
+        i{
+          font-size: 18px;
+        }
+      }
+    }
+    .burder{
+      &__menu{
+        top: 25%;
+      }
+    }
+  }
+}

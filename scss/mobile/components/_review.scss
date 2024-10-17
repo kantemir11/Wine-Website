@@ -1,0 +1,42 @@
+@include for-size(small-phone){
+    .review{
+        min-height: 640px;
+        &__title{
+            padding: 80px 0 30px;
+        }
+        &__name{
+            margin: 15px 0;
+        }
+        &__description{
+            width: 85%;
+        }
+        .slick-dots li button{
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
+
+/*===================================*/
+@include for-size(iphone-x){
+    .review{
+        min-height: 560px;
+        &__img{
+            width: 130px;
+            height: 130px;
+        }
+        &__name{
+            margin: 10px 0;
+            font-size: 16px;
+        }
+     
+        &__description{
+            width: 100%;
+            font-size: 12px;
+        }
+        .slider__item{
+            padding: 0 10px;
+        }
+    }
+
+}

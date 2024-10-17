@@ -1,0 +1,52 @@
+.footer{
+    &__top{
+        display: flex;
+        margin-bottom: 90px;
+    }
+    &__title{
+        @include font($font-choco, 24px, 400);
+        color:$orange ;
+        margin: 133px 0 42px;
+        text-transform: uppercase;
+    }
+   
+    &__link{
+        margin-bottom: 25px;
+        color: $white;
+        @include font($font-poppins, 16px, 400);
+
+    }
+    &__item{
+        svg{
+            margin-right: 15px;
+        }
+    }
+    &__social-icons{
+        align-items: center;
+        margin:-10px 0 35px;
+        .social-icons__item{
+            margin-right: 45px;
+        }
+        svg{
+            fill:$orange;
+            width: 24px;
+            height: 24px;
+            &:hover{
+                fill: $white;
+            }
+        }
+        
+    }
+    &__bottom{
+        border-top: 2px solid $white;
+        border-bottom: transparent;
+        border-left: transparent;
+        border-right:transparent;
+        color: $white;
+        @include font($font-poppins, 16px, 400);
+        text-align: center;
+        padding: 22px 0 44px;
+
+
+    }
+}

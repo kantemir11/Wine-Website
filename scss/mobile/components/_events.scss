@@ -1,0 +1,80 @@
+@include for-size(small-phone){
+    .events{
+        padding-bottom: 80px;
+        &__inner{
+            padding-top: 80px;
+            position: relative;
+        }
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__name{
+            font-size: 16px;
+            padding: 10px 4px;
+        }
+        &__date, &__text{
+            font-size: 12px;
+            margin: 15px 0;
+        }
+        &__text{
+            width: 90%;
+        }
+        &__link{
+            padding: 0;
+            width: 85px;
+        }
+        &__arrow{
+            display: none;
+        }
+        .slick-dots {
+            padding-top: 80px;
+            margin: 0 auto;
+            display: flex;
+            position: absolute;
+            bottom: -18%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          .slick-dots li {
+            list-style-type: none;
+            margin: 10px;
+          }
+          .slick-dots li button {
+            outline: none;
+            border: transparent;
+            font-size: 0;
+            padding: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $white;
+          }
+          .slick-dots .slick-active button {
+            background-color: $orange;
+          }
+        }
+        
+    }
+
+/*==============================================*/
+@include for-size(iphone-x){
+    .events{
+        padding-bottom: 50px;
+        &__name{
+            line-height: 1;
+            font-size: 10px;
+            padding: 10px 0;
+            padding: 10px 0 0;
+        }
+        &__date, &__text{
+            font-size: 8px;
+        }
+        &__text{
+            margin: 5px 0;
+        }
+        &__link{
+        width: 60px;
+
+        }
+    }
+}

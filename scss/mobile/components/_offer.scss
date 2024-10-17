@@ -1,0 +1,58 @@
+@include for-size(small-phone){
+    .offer{
+        &__title{
+            margin: 80px 0 30px;
+        }
+        &__name{
+            font-size: 10px;
+            font-weight: 200;
+        }
+        &__price{
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .slick-dots{
+            padding-top: 45px;
+        }
+        .slick-dots li button{
+            width: 10px;
+            height: 10px;
+        }
+        .slick-slide {       
+            &.slick-current,
+            &.slick-center {
+              .offer__info {
+                bottom: 7px;
+              }
+              .offer__item {
+                img {
+                  // min-height: 195px;
+                }
+              }
+            }
+           
+        }
+    }
+}
+
+/*=========================================*/
+@include for-size(iphone-x){
+  .offer{
+    .slick-slide {       
+      &.slick-current,
+      &.slick-center {
+        .offer__info {
+          bottom: 7px;
+        }
+        .offer__item {
+          img {
+            // min-height: 0;
+          }
+        }
+      }
+     
+  }
+  }
+}
+
+    
